@@ -24,9 +24,9 @@ $(document).ready(function(){
     }
 	})
 	
-	$('#printOrder').click(function(){
+	$('#print').click(function(){
 		if (!$(this).hasClass("disabled")) {
-			alert(JSON.stringify(db));
+			window.print();
 			$.redirect('print.html', {'db': JSON.stringify(db)}, "GET");
 		}
 	})

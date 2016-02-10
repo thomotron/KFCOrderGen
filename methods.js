@@ -33,7 +33,7 @@ function webTables() {
 	
 	for (var name in db.subtotals) {
 		$('#subtotalTable tbody').append(tableRow(name, "$" + db.subtotals[name].cash, "$" + db.subtotals[name].subtotal, "$" + db.subtotals[name].change));
-		if (db.subtotals[name].change <= -1) {
+		if (db.subtotals[name].change < 0) {
 			$('#subtotalTable td:contains("' + name + '")').parent().addClass("danger");
 		} else if (db.subtotals[name].change <= 1.5) {
 			$('#subtotalTable td:contains("' + name + '")').parent().addClass("warning");

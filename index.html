@@ -11,10 +11,7 @@
 <script type="text/javascript" src="methods.js"></script>
 <script type="text/Javascript" src="web.js"></script>
 <style type="text/css">
-@media print
-{
-.noprint {display:none;}
-}
+@media print { .noprint {display: none;} }
 </style>
 </head>
 
@@ -31,7 +28,7 @@
   	<input name="multiplier" type="text" id="multiplier" value="1" class="form-control" style="width: 42px" />
     x
     <div class="input-group">
-        <select name="sizePicker" id="sizePicker" class="form-control dropdown" style="width: 78px;">
+        <select name="sizePicker" id="sizePicker" class="form-control" style="width: 78px;">
           <option>Sml</option>
           <option selected="selected" id="defaultOption">Reg</option>
           <option>Lrg</option>
@@ -43,17 +40,19 @@
     &nbsp;for&nbsp;
     <input name="nameField" id="nameField" type="text" class="form-control" style="width: 200px;" placeholder="e.g. John D" />
 		<button type="button" name="add" id="add" class="btn btn-primary"><div class="glyphicon glyphicon-plus-sign"/></button>
-    <div class="dropdown">
-      <button type="button" id="printDropdown" class="btn btn-default dropdown-toggle pull-right">
-        <!--<div class="glyphicon glyphicon-print" />-->
-        <!--Print...-->
+    <!--<div class="dropdown">
+      <button type="button" id="printDropdown" class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown">
+        <div class="glyphicon glyphicon-print" />
         <div class="caret" />
       </button>
       <ul class="dropdown-menu">
       	<li><a href="javascript:window.print()">This page</a></li>
         <li><a href="#" id="printOrder">Just the order list</a></li>
       </ul>
-    </div>
+    </div>-->
+    <button type="button" id="print" class="btn btn-default pull-right">
+    	<div class="glyphicon glyphicon-print" />
+    </button>
   </form>
   
   <br/>

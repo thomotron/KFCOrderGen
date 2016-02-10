@@ -62,7 +62,7 @@ function resetInputs() {
 function subtotalSetup(name, cost) {
 	if (db.subtotals[name] == undefined) {
 		cash = prompt("How much money does " + name + " have?");
-		while (isNaN(cash) || cash == "" || cash > 200) {
+		while (isNaN(cash) || cash == "" || cash > 99) {
 			cash = prompt("How much money does " + name + " have?\nNumbers only, please!");
 		}
 		db.subtotals[name] = {"cash": 0, "subtotal": 0, "change": 0};

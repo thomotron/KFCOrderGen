@@ -4,4 +4,6 @@ $(document).ready(function(){
 	
 	printTables();
 	
+	window.print();
+	
 })

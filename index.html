@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="redirect.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="methods.js"></script>
+<script type="text/Javascript" src="web.js"></script>
+<style type="text/css">
+@media print
+{
+.noprint {display:none;}
+}
+</style>
+</head>
+
+<body>
+<div id="centreCont" class="container" role="main">
+	<p>
+		<h1>KFC Order List Generator</h1>
+		<h4 class="noprint">Just pick what you want and add it to the list.</h4>
+  </p>
+  
+  <br/>
+  
+  <form class="form-inline noprint">
+  	<input name="multiplier" type="text" id="multiplier" value="1" class="form-control" style="width: 42px" />
+    x
+    <div class="input-group">
+        <select name="sizePicker" id="sizePicker" class="form-control dropdown" style="width: 78px;">
+          <option>Sml</option>
+          <option selected="selected" id="defaultOption">Reg</option>
+          <option>Lrg</option>
+        </select>
+      <select name="menuPicker" id="menuPicker" class="form-control" style="width: 350px;">
+        <option selected="selected" disabled=true id="defaultOption">Please Select...</option>
+      </select>
+    </div>
+    &nbsp;for&nbsp;
+    <input name="nameField" id="nameField" type="text" class="form-control" style="width: 200px;" placeholder="e.g. John D" />
+		<button type="button" name="add" id="add" class="btn btn-primary"><div class="glyphicon glyphicon-plus-sign"/></button>
+    <div class="dropdown">
+      <button type="button" id="printDropdown" class="btn btn-default dropdown-toggle pull-right">
+        <!--<div class="glyphicon glyphicon-print" />-->
+        <!--Print...-->
+        <div class="caret" />
+      </button>
+      <ul class="dropdown-menu">
+      	<li><a href="javascript:window.print()">This page</a></li>
+        <li><a href="#" id="printOrder">Just the order list</a></li>
+      </ul>
+    </div>
+  </form>
+  
+  <br/>
+  <br/>
+  
+  <table class="table table-hover" id="orderTable" style="width: 60%; float: left;">
+  	<tr>
+    	<th style="width: 3%">
+      	Amount
+      </th>
+      <th style="width: 30%">
+      	Item
+      </th>
+      <th style="width: 20%">
+      	Name
+      </th>
+      <th style="width: 5%">
+      	Cost
+      </th>
+    </tr>
+    <tr>
+    	<th>
+      </th>
+      <th>
+      </th>
+      <th>
+      	Total
+      </th>
+      <th>
+      	$0.00
+      </th>
+    </tr>
+  </table>
+  
+  <table class="table table-hover" id="subtotalTable" style="width: 30%; float: right;">
+  	<tr>
+    	<th style="width: 8%">
+      	Name
+      </th>
+      <th style="width: 6%">
+      	Cash
+      </th>
+      <th style="width: 6%">
+      	Subtotal
+      </th>
+      <th style="width: 6%">
+      	Change
+      </th>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

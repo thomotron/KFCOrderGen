@@ -8,10 +8,14 @@ function webInit() {
 	for (var i = 0; i < menu.callback.length; i++) {
 		if (menu.callback[i].name.includes("---")) {
 			items[i] = ("<option disabled=true style=\"display: block;\">" + menu.callback[i].name + "</option>");
+		} else if (menu.callback[i].lrg != undefined || menu.callback[i].reg != undefined) {
+			items[i] = ("<option value=\"" + i + "\" size-select=\"size\">" + menu.callback[i].name + "</option>");
+		} else if (menu.callback[i].combo != undefined) {
+			items[i] = ("<option value=\"" + i + "\" size-select=\"combo\">" + menu.callback[i].name + "</option>");
 		} else {
 			items[i] = ("<option value=\"" + i + "\">" + menu.callback[i].name + "</option>");
 		}
-	};
+	}
 
 	$('#menuPicker').append( items.join('') );
 }

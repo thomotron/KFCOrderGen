@@ -27,7 +27,7 @@ function webTables() {
 	
 	// Generate new tables
 	for (var i = 0; i < db.order.length; i++) {
-		$('#orderTable tbody').append("<tr><td>"+db.order[i].amount+"</td><td>"+db.order[i].itemName+"</td><td>"+db.order[i].name+"</td><td>$"+db.order[i].cost+"</td><td class=\"noprint\"><button type=\"button\" class=\"btn btn-xs btn-danger\" name=\"remove\"><div class=\"glyphicon glyphicon-minus-sign\" /></button></td></tr>");
+		$('#orderTable tbody').append("<tr><td>"+db.order[i].amount+"</td><td>"+db.order[i].itemName+"</td><td>"+db.order[i].name+"</td><td>$"+db.order[i].cost+"</td><td class=\"noprint\"><button type=\"button\" class=\"btn btn-xs btn-danger\" name=\"remover\"><div class=\"glyphicon glyphicon-minus-sign\" /></button></td></tr>");
 	}
 	
 	for (var name in db.subtotals) {

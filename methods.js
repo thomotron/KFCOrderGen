@@ -18,7 +18,6 @@ function webInit() {
 
 function printInit() {
 	db = JSON.parse(getURLParameter("db"));
-	//db = {"totals": {"cash": 0, "order": 0, "change": 0}, "order": [], "subtotals": []};
 }
 
 function webTables() {
@@ -28,7 +27,7 @@ function webTables() {
 	
 	// Generate new tables
 	for (var i = 0; i < db.order.length; i++) {
-		$('#orderTable tbody').append(tableRow(db.order[i].amount, db.order[i].itemName, db.order[i].name, "$" + db.order[i].cost));
+		$('#orderTable tbody').append("<tr><td>"+db.order[i].amount+"</td><td>"+db.order[i].itemName+"</td><td>"+db.order[i].name+"</td><td>$"+db.order[i].cost+"</td><td class=\"noprint\"><button type=\"button\" class=\"btn btn-xs btn-danger\" name=\"remove\"><div class=\"glyphicon glyphicon-minus-sign\" /></button></td></tr>");
 	}
 	
 	for (var name in db.subtotals) {
@@ -41,7 +40,7 @@ function webTables() {
 	}
 	
 	// Put the total back on the order table
-	$('#orderTable tbody').append("<tr><th></th><th></th><th>Total</th><th>" + "$" + (db.totals.order).toFixed(2) + "</th></tr>");
+	$('#orderTable tbody').append("<tr><th></th><th></th><th>Total</th><th>" + "$" + (db.totals.order).toFixed(2) + "</th><th></th></tr>");
 }
 
 function printTables() {	
@@ -56,7 +55,7 @@ function printTables() {
 
 function resetInputs() {
 	$('#multiplier').val(1);
-	$('#defaultOption').attr("selected", "selected");
+	$('.defaultOption').attr("selected", "selected");
 }
 
 function subtotalSetup(name, cost) {

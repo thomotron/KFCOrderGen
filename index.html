@@ -29,12 +29,15 @@
     x
     <div class="input-group">
         <select name="sizePicker" id="sizePicker" class="form-control" style="width: 78px;">
-          <option>Sml</option>
-          <option selected="selected" id="defaultOption">Reg</option>
+        	<option class="dropdown-header">Standard</option>
+          <option selected="selected" class="defaultOption">Reg</option>
+          <option>Lrg</option>
+          <option class="dropdown-header">Combos</option>
+          <option>Reg</option>
           <option>Lrg</option>
         </select>
       <select name="menuPicker" id="menuPicker" class="form-control" style="width: 350px;">
-        <option selected="selected" disabled=true id="defaultOption">Please Select...</option>
+        <option selected="selected" disabled=true class="defaultOption">Please Select...</option>
       </select>
     </div>
     &nbsp;for&nbsp;
@@ -50,17 +53,19 @@
   
   <table class="table table-hover" id="orderTable" style="width: 60%; float: left;">
   	<tr>
-    	<th style="width: 3%">
-      	Amount
+    	<th style="width: 1%">
+      	Amt
       </th>
       <th style="width: 27%">
       	Item
       </th>
-      <th style="width: 20%">
+      <th style="width: 15%">
       	Name
       </th>
       <th style="width: 5%">
       	Cost
+      </th>
+      <th style="width: 5%;" class="noprint">
       </th>
     </tr>
     <tr>
@@ -73,6 +78,8 @@
       </th>
       <th>
       	$0.00
+      </th>
+      <th class="noprint">
       </th>
     </tr>
   </table>

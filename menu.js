@@ -435,90 +435,90 @@ var menu = {
     },
     {
       "name": "Pepsi",
-      "sml": {
+      "reg": {
         "name": " 375ml",
         "price": 2.95
       },
-      "reg": {
+      "lrg": {
         "name": " 600ml",
         "price": 3.95
       },
-      "lrg": {
+      "xl": {
         "name": " 1.25L",
         "price": 4.25
       }
     },
     {
       "name": "Pepsi Max",
-      "sml": {
+      "reg": {
         "name": "Pepsi Max 375ml",
         "price": 2.95
       },
-      "reg": {
+      "lrg": {
         "name": "Pepsi Max 600ml",
         "price": 3.95
       },
-      "lrg": {
+      "xl": {
         "name": "Pepsi Max 1.25L",
         "price": 4.25
       }
     },
     {
       "name": "Solo",
-      "sml": {
+      "reg": {
         "name": "Solo 375ml",
         "price": 2.95
       },
-      "reg": {
+      "lrg": {
         "name": "Solo 600ml",
         "price": 3.95
       },
-      "lrg": {
+      "xl": {
         "name": "Solo 1.25L",
         "price": 4.25
       }
     },
     {
       "name": "Sunkist",
-      "sml": {
+      "reg": {
         "name": "Sunkist 375ml",
         "price": 2.95
       },
-      "reg": {
+      "lrg": {
         "name": "Sunkist 600ml",
         "price": 3.95
       },
-      "lrg": {
+      "xl": {
         "name": "Sunkist 1.25L",
         "price": 4.25
       }
     },
     {
       "name": "7Up",
-      "sml": {
+      "reg": {
         "name": "7Up 375ml",
         "price": 2.95
       },
-      "reg": {
+      "lrg": {
         "name": "7Up 600ml",
         "price": 3.95
       },
-      "lrg": {
+      "xl": {
         "name": "7Up 1.25L",
         "price": 4.25
       }
     },
     {
       "name": "Mountain Dew",
-      "sml": {
+      "reg": {
         "name": "Mountain Dew 375ml",
         "price": 2.95
       },
-      "reg": {
+      "lrg": {
         "name": "Mountain Dew 600ml",
         "price": 3.95
       },
-      "lrg": {
+      "xl": {
         "name": "Mountain Dew 1.25L",
         "price": 4.25
       }

@@ -141,29 +141,29 @@ var menu = {
       "price": 12.95
     },
     {
-      "name": "Original Tenders 5 pieces",
+      "name": "Original Tenders 5 Pieces",
       "price": 9.95,
       "combo": {
         "reg": {
-          "name": " Combo",
+          "name": "Original Tenders 5 Pieces Combo",
           "price": 6.95
         },
         "lrg": {
-          "name": " Combo Large",
+          "name": "Original Tenders 5 Pieces Combo Large",
           "price": 8.95
         }
       }
     },
     {
-      "name": "Original Tenders 3 pieces",
+      "name": "Original Tenders 3 Pieces",
       "price": 6.95,
       "combo": {
         "reg": {
-          "name": " Combo",
+          "name": "Original Tenders 3 Pieces Combo",
           "price": 6.95
         },
         "lrg": {
-          "name": " Combo Large",
+          "name": "Original Tenders 3 Pieces Combo Large",
           "price": 8.95
         }
       }

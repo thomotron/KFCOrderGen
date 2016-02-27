@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="jquery.min.js"></script>
 <script src="redirect.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript" src="methods.js"></script>
 <script type="text/Javascript" src="web.js"></script>
@@ -28,15 +28,10 @@
   	<input name="multiplier" type="text" id="multiplier" value="1" class="form-control" style="width: 42px" />
     x
     <div class="input-group">
-        <select name="sizePicker" id="sizePicker" class="form-control" style="width: 78px;">
-        	<option class="dropdown-header">Standard</option>
-          <option selected="selected" class="defaultOption">Reg</option>
-          <option>Lrg</option>
-          <option class="dropdown-header">Combos</option>
-          <option>Reg</option>
-          <option>Lrg</option>
+        <select name="sizePicker" id="sizePicker" class="form-control" style="width: 78px;" disabled="true">
+          <option></option>
         </select>
-      <select name="menuPicker" id="menuPicker" class="form-control" style="width: 350px;">
+      <select name="menuPicker" id="menuPicker" class="form-control text-right" style="width: 350px;">
         <option selected="selected" disabled=true class="defaultOption">Please Select...</option>
       </select>
     </div>
@@ -56,7 +51,7 @@
     	<th style="width: 1%">
       	Amt
       </th>
-      <th style="width: 27%">
+      <th style="width: 39%">
       	Item
       </th>
       <th style="width: 15%">
@@ -68,7 +63,7 @@
       <th style="width: 1%;" class="noprint">
       </th>
     </tr>
-    <tr>
+    <!--<tr>
     	<th>
       </th>
       <th>
@@ -81,12 +76,12 @@
       </th>
       <th class="noprint">
       </th>
-    </tr>
+    </tr>-->
   </table>
   
-  <table class="table table-hover" id="subtotalTable" style="width: 30%; float: right;">
+  <table class="table table-hover pull-right" id="subtotalTable" style="width: 25%">
   	<tr>
-    	<th style="width: 8%">
+    	<th style="width: 7%">
       	Name
       </th>
       <th style="width: 6%">
